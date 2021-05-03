@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6BBE1CE263FABE1001BB378 /* SplineEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1CD263FABE1001BB378 /* SplineEditorApp.swift */; };
+		C6BBE1D0263FABE1001BB378 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1CF263FABE1001BB378 /* ContentView.swift */; };
+		C6BBE1D2263FABE2001BB378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BBE1D1263FABE2001BB378 /* Assets.xcassets */; };
+		C6BBE1D5263FABE2001BB378 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BBE1D4263FABE2001BB378 /* Preview Assets.xcassets */; };
+		C6BBE1E1263FABE3001BB378 /* SplineEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1E0263FABE3001BB378 /* SplineEditorTests.swift */; };
+		C6BBE1EC263FABE3001BB378 /* SplineEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1EB263FABE3001BB378 /* SplineEditorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6BBE1DD263FABE3001BB378 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6BBE1C2263FABE1001BB378 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BBE1C9263FABE1001BB378;
+			remoteInfo = SplineEditor;
+		};
+		C6BBE1E8263FABE3001BB378 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6BBE1C2263FABE1001BB378 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BBE1C9263FABE1001BB378;
+			remoteInfo = SplineEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C6BBE1CA263FABE1001BB378 /* SplineEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplineEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BBE1CD263FABE1001BB378 /* SplineEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplineEditorApp.swift; sourceTree = "<group>"; };
+		C6BBE1CF263FABE1001BB378 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6BBE1D1263FABE2001BB378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6BBE1D4263FABE2001BB378 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6BBE1D6263FABE2001BB378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BBE1D7263FABE2001BB378 /* SplineEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SplineEditor.entitlements; sourceTree = "<group>"; };
+		C6BBE1DC263FABE3001BB378 /* SplineEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplineEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BBE1E0263FABE3001BB378 /* SplineEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplineEditorTests.swift; sourceTree = "<group>"; };
+		C6BBE1E2263FABE3001BB378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BBE1E7263FABE3001BB378 /* SplineEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplineEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BBE1EB263FABE3001BB378 /* SplineEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplineEditorUITests.swift; sourceTree = "<group>"; };
+		C6BBE1ED263FABE3001BB378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6BBE1C7263FABE1001BB378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BBE1D9263FABE3001BB378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BBE1E4263FABE3001BB378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6BBE1C1263FABE1001BB378 = {
+			isa = PBXGroup;
+			children = (
+				C6BBE1CC263FABE1001BB378 /* SplineEditor */,
+				C6BBE1DF263FABE3001BB378 /* SplineEditorTests */,
+				C6BBE1EA263FABE3001BB378 /* SplineEditorUITests */,
+				C6BBE1CB263FABE1001BB378 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6BBE1CB263FABE1001BB378 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6BBE1CA263FABE1001BB378 /* SplineEditor.app */,
+				C6BBE1DC263FABE3001BB378 /* SplineEditorTests.xctest */,
+				C6BBE1E7263FABE3001BB378 /* SplineEditorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6BBE1CC263FABE1001BB378 /* SplineEditor */ = {
+			isa = PBXGroup;
+			children = (
+				C6BBE1CD263FABE1001BB378 /* SplineEditorApp.swift */,
+				C6BBE1CF263FABE1001BB378 /* ContentView.swift */,
+				C6BBE1D1263FABE2001BB378 /* Assets.xcassets */,
+				C6BBE1D6263FABE2001BB378 /* Info.plist */,
+				C6BBE1D7263FABE2001BB378 /* SplineEditor.entitlements */,
+				C6BBE1D3263FABE2001BB378 /* Preview Content */,
+			);
+			path = SplineEditor;
+			sourceTree = "<group>";
+		};
+		C6BBE1D3263FABE2001BB378 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C6BBE1D4263FABE2001BB378 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6BBE1DF263FABE3001BB378 /* SplineEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6BBE1E0263FABE3001BB378 /* SplineEditorTests.swift */,
+				C6BBE1E2263FABE3001BB378 /* Info.plist */,
+			);
+			path = SplineEditorTests;
+			sourceTree = "<group>";
+		};
+		C6BBE1EA263FABE3001BB378 /* SplineEditorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6BBE1EB263FABE3001BB378 /* SplineEditorUITests.swift */,
+				C6BBE1ED263FABE3001BB378 /* Info.plist */,
+			);
+			path = SplineEditorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6BBE1C9263FABE1001BB378 /* SplineEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BBE1F0263FABE3001BB378 /* Build configuration list for PBXNativeTarget "SplineEditor" */;
+			buildPhases = (
+				C6BBE1C6263FABE1001BB378 /* Sources */,
+				C6BBE1C7263FABE1001BB378 /* Frameworks */,
+				C6BBE1C8263FABE1001BB378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SplineEditor;
+			productName = SplineEditor;
+			productReference = C6BBE1CA263FABE1001BB378 /* SplineEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6BBE1DB263FABE3001BB378 /* SplineEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BBE1F3263FABE3001BB378 /* Build configuration list for PBXNativeTarget "SplineEditorTests" */;
+			buildPhases = (
+				C6BBE1D8263FABE3001BB378 /* Sources */,
+				C6BBE1D9263FABE3001BB378 /* Frameworks */,
+				C6BBE1DA263FABE3001BB378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6BBE1DE263FABE3001BB378 /* PBXTargetDependency */,
+			);
+			name = SplineEditorTests;
+			productName = SplineEditorTests;
+			productReference = C6BBE1DC263FABE3001BB378 /* SplineEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C6BBE1E6263FABE3001BB378 /* SplineEditorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BBE1F6263FABE3001BB378 /* Build configuration list for PBXNativeTarget "SplineEditorUITests" */;
+			buildPhases = (
+				C6BBE1E3263FABE3001BB378 /* Sources */,
+				C6BBE1E4263FABE3001BB378 /* Frameworks */,
+				C6BBE1E5263FABE3001BB378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6BBE1E9263FABE3001BB378 /* PBXTargetDependency */,
+			);
+			name = SplineEditorUITests;
+			productName = SplineEditorUITests;
+			productReference = C6BBE1E7263FABE3001BB378 /* SplineEditorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6BBE1C2263FABE1001BB378 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C6BBE1C9263FABE1001BB378 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					C6BBE1DB263FABE3001BB378 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C6BBE1C9263FABE1001BB378;
+					};
+					C6BBE1E6263FABE3001BB378 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C6BBE1C9263FABE1001BB378;
+					};
+				};
+			};
+			buildConfigurationList = C6BBE1C5263FABE1001BB378 /* Build configuration list for PBXProject "SplineEditor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6BBE1C1263FABE1001BB378;
+			productRefGroup = C6BBE1CB263FABE1001BB378 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6BBE1C9263FABE1001BB378 /* SplineEditor */,
+				C6BBE1DB263FABE3001BB378 /* SplineEditorTests */,
+				C6BBE1E6263FABE3001BB378 /* SplineEditorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6BBE1C8263FABE1001BB378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BBE1D5263FABE2001BB378 /* Preview Assets.xcassets in Resources */,
+				C6BBE1D2263FABE2001BB378 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BBE1DA263FABE3001BB378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BBE1E5263FABE3001BB378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6BBE1C6263FABE1001BB378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BBE1D0263FABE1001BB378 /* ContentView.swift in Sources */,
+				C6BBE1CE263FABE1001BB378 /* SplineEditorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BBE1D8263FABE3001BB378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BBE1E1263FABE3001BB378 /* SplineEditorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BBE1E3263FABE3001BB378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BBE1EC263FABE3001BB378 /* SplineEditorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6BBE1DE263FABE3001BB378 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6BBE1C9263FABE1001BB378 /* SplineEditor */;
+			targetProxy = C6BBE1DD263FABE3001BB378 /* PBXContainerItemProxy */;
+		};
+		C6BBE1E9263FABE3001BB378 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6BBE1C9263FABE1001BB378 /* SplineEditor */;
+			targetProxy = C6BBE1E8263FABE3001BB378 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C6BBE1EE263FABE3001BB378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6BBE1EF263FABE3001BB378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C6BBE1F1263FABE3001BB378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SplineEditor/SplineEditor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SplineEditor/Preview Content\"";
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SplineEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.SplineEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C6BBE1F2263FABE3001BB378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SplineEditor/SplineEditor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SplineEditor/Preview Content\"";
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SplineEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.SplineEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C6BBE1F4263FABE3001BB378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				INFOPLIST_FILE = SplineEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.SplineEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SplineEditor.app/Contents/MacOS/SplineEditor";
+			};
+			name = Debug;
+		};
+		C6BBE1F5263FABE3001BB378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				INFOPLIST_FILE = SplineEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.SplineEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SplineEditor.app/Contents/MacOS/SplineEditor";
+			};
+			name = Release;
+		};
+		C6BBE1F7263FABE3001BB378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				INFOPLIST_FILE = SplineEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.SplineEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SplineEditor;
+			};
+			name = Debug;
+		};
+		C6BBE1F8263FABE3001BB378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				INFOPLIST_FILE = SplineEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.latencyzero.SplineEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SplineEditor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6BBE1C5263FABE1001BB378 /* Build configuration list for PBXProject "SplineEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BBE1EE263FABE3001BB378 /* Debug */,
+				C6BBE1EF263FABE3001BB378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BBE1F0263FABE3001BB378 /* Build configuration list for PBXNativeTarget "SplineEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BBE1F1263FABE3001BB378 /* Debug */,
+				C6BBE1F2263FABE3001BB378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BBE1F3263FABE3001BB378 /* Build configuration list for PBXNativeTarget "SplineEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BBE1F4263FABE3001BB378 /* Debug */,
+				C6BBE1F5263FABE3001BB378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BBE1F6263FABE3001BB378 /* Build configuration list for PBXNativeTarget "SplineEditorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BBE1F7263FABE3001BB378 /* Debug */,
+				C6BBE1F8263FABE3001BB378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6BBE1C2263FABE1001BB378 /* Project object */;
+}
