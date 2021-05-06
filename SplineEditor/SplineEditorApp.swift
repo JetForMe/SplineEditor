@@ -11,7 +11,8 @@ import SwiftUI
 struct SplineEditorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CurveEditor(curve: Curve())
+//            	.frame(minWidth: 400, minHeight: 400)
         }
     }
 }

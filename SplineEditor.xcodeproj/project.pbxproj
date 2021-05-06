@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C6BBE1CE263FABE1001BB378 /* SplineEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1CD263FABE1001BB378 /* SplineEditorApp.swift */; };
-		C6BBE1D0263FABE1001BB378 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1CF263FABE1001BB378 /* ContentView.swift */; };
 		C6BBE1D2263FABE2001BB378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BBE1D1263FABE2001BB378 /* Assets.xcassets */; };
 		C6BBE1D5263FABE2001BB378 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BBE1D4263FABE2001BB378 /* Preview Assets.xcassets */; };
 		C6BBE1E1263FABE3001BB378 /* SplineEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1E0263FABE3001BB378 /* SplineEditorTests.swift */; };
 		C6BBE1EC263FABE3001BB378 /* SplineEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1EB263FABE3001BB378 /* SplineEditorUITests.swift */; };
+		C6BBE1FA2643C324001BB378 /* Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1F92643C324001BB378 /* Curve.swift */; };
+		C6BBE1FC2643C497001BB378 /* CurveEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1FB2643C497001BB378 /* CurveEditor.swift */; };
+		C6BBE1FE2643CC84001BB378 /* SwiftUI+LZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1FD2643CC84001BB378 /* SwiftUI+LZ.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,6 @@
 /* Begin PBXFileReference section */
 		C6BBE1CA263FABE1001BB378 /* SplineEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplineEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BBE1CD263FABE1001BB378 /* SplineEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplineEditorApp.swift; sourceTree = "<group>"; };
-		C6BBE1CF263FABE1001BB378 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C6BBE1D1263FABE2001BB378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6BBE1D4263FABE2001BB378 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6BBE1D6263FABE2001BB378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +47,9 @@
 		C6BBE1E7263FABE3001BB378 /* SplineEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplineEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BBE1EB263FABE3001BB378 /* SplineEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplineEditorUITests.swift; sourceTree = "<group>"; };
 		C6BBE1ED263FABE3001BB378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BBE1F92643C324001BB378 /* Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curve.swift; sourceTree = "<group>"; };
+		C6BBE1FB2643C497001BB378 /* CurveEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurveEditor.swift; sourceTree = "<group>"; };
+		C6BBE1FD2643CC84001BB378 /* SwiftUI+LZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+LZ.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				C6BBE1CD263FABE1001BB378 /* SplineEditorApp.swift */,
-				C6BBE1CF263FABE1001BB378 /* ContentView.swift */,
+				C6BBE1F92643C324001BB378 /* Curve.swift */,
+				C6BBE1FB2643C497001BB378 /* CurveEditor.swift */,
+				C6BBE1FD2643CC84001BB378 /* SwiftUI+LZ.swift */,
 				C6BBE1D1263FABE2001BB378 /* Assets.xcassets */,
 				C6BBE1D6263FABE2001BB378 /* Info.plist */,
 				C6BBE1D7263FABE2001BB378 /* SplineEditor.entitlements */,
@@ -261,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6BBE1D0263FABE1001BB378 /* ContentView.swift in Sources */,
+				C6BBE1FC2643C497001BB378 /* CurveEditor.swift in Sources */,
+				C6BBE1FA2643C324001BB378 /* Curve.swift in Sources */,
 				C6BBE1CE263FABE1001BB378 /* SplineEditorApp.swift in Sources */,
+				C6BBE1FE2643CC84001BB378 /* SwiftUI+LZ.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
