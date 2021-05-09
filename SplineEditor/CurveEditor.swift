@@ -10,7 +10,9 @@ import SwiftUI
 import simd
 
 
-struct CurveEditor: View {
+struct
+CurveEditor: View
+{
 	@State				var		curve					:	Curve
 	@State		private	var		local					:	CGPoint			=	.zero
 	@State		private	var		cursorPosition			:	CGPoint			=	.zero
@@ -20,10 +22,15 @@ struct CurveEditor: View {
 	var body: some View
 	{
 		VStack {
-			CurveEditorDetail(curve: self.$curve,
-								local: self.$local,
-								cursorPosition: self.$cursorPosition,
-								drawCustomHandles: self.$drawCustomHandles)
+			Axes
+			{
+				Curves(curve: self.$curve,
+									local: self.$local,
+									cursorPosition: self.$cursorPosition,
+									drawCustomHandles: self.$drawCustomHandles)
+			}
+			.padding()
+			
 			HStack {
 				InfoBar(local: self.local, cursorPosition: self.cursorPosition)
 				Spacer()
@@ -36,7 +43,52 @@ struct CurveEditor: View {
 }
 
 struct
-CurveEditorDetail: View
+Axes<Content : View> : View
+{
+	var content: () -> Content
+	
+	
+	init(@ViewBuilder _ inContent: @escaping () -> Content)
+	{
+		self.content = inContent
+	}
+	
+	var body: some View
+	{
+		ZStack
+		{
+			GeometryReader { geom in
+				let chartWidth = geom.size.width					//	Make the rest of the code a bit cleaner
+				let chartHeight = geom.size.height
+				
+				//	Draw the axes…
+				
+				Path { path in
+					path.move(to: .zero)
+					path.addLine(to: CGPoint(x: chartWidth, y: 0.0))
+					path.move(to: .zero)
+					path.addLine(to: CGPoint(x: 0.0, y: chartHeight))
+					
+					for p: CGFloat in stride(from: CGFloat(0.0), through: CGFloat(1.0), by: 0.25)
+					{
+						path.move(to: CGPoint(x: p * chartWidth, y: 0.0))
+						path.addLine(to: CGPoint(x: p * chartWidth, y: -6.0))
+						path.move(to: CGPoint(x: 0.0, y: p * chartHeight))
+						path.addLine(to: CGPoint(x: -6.0, y: p * chartHeight))
+					}
+				}
+				.scale(x: 1.0, y: -1.0)
+				.stroke(style: StrokeStyle(lineWidth: 2.0, lineCap: .square))
+				.foregroundColor(.gray)
+			}
+			
+			self.content()
+		}
+	}
+}
+
+struct
+Curves: View
 {
 	@Binding			var		curve					:	Curve
 	@Binding			var		local					:	CGPoint		//	TODO: I don't really like this binding shit here, but tracking is super broken anyway. I think we can handle tracking outside of these detail views
@@ -57,41 +109,17 @@ CurveEditorDetail: View
 	
 	var body: some View
 	{
-		//	Draw the axes…
-		
 		GeometryReader { geom in
-			let width = geom.size.width					//	Make the rest of the code a bit cleaner
-			let height = geom.size.height
-			let chartWidth = width - 2 * kAxisMargin
-			let chartHeight = height - 2 * kAxisMargin
+			let chartWidth = geom.size.width					//	Make the rest of the code a bit cleaner
+			let chartHeight = geom.size.height
 			let scale = simd_double2(x: Double(chartWidth), y: Double(chartHeight))
-			let localFrame = geom.frame(in: .local)
-			let globalFrame = geom.frame(in: .global)
+//			let localFrame = geom.frame(in: .local)
+//			let globalFrame = geom.frame(in: .global)
 //			debugLogView("localFrame: \(localFrame)")
 //			debugLogView("globalFrame: \(globalFrame)")
-			
-			//	Draw the axes…
+//			debugLogView("size: \(geom.size)")
 			
 			ZStack {
-				Path { path in
-					path.move(to: .zero)
-					path.addLine(to: CGPoint(x: chartWidth, y: 0.0))
-					path.move(to: .zero)
-					path.addLine(to: CGPoint(x: 0.0, y: chartHeight))
-					
-					for p: CGFloat in stride(from: CGFloat(0.0), through: CGFloat(1.0), by: kTickInterval)
-					{
-						path.move(to: CGPoint(x: p * chartWidth, y: 0.0))
-						path.addLine(to: CGPoint(x: p * chartWidth, y: -6.0))
-						path.move(to: CGPoint(x: 0.0, y: p * chartHeight))
-						path.addLine(to: CGPoint(x: -6.0, y: p * chartHeight))
-					}
-				}
-				.offset(x: kAxisMargin, y: kAxisMargin)
-				.scale(x: 1.0, y: -1.0)
-				.stroke(style: StrokeStyle(lineWidth: 2.0, lineCap: .square))
-				.foregroundColor(.gray)
-				
 				//	Draw the control points…
 				
 				if self.drawCustomHandles
@@ -109,7 +137,6 @@ CurveEditorDetail: View
 										clockwise: false)
 						}
 					}
-					.offset(x: kAxisMargin, y: kAxisMargin)
 					.scale(x: 1.0, y: -1.0)
 					.fill()
 					.foregroundColor(.red)
@@ -126,12 +153,8 @@ CurveEditorDetail: View
 				
 				//	Draw the x==t -> y curve…
 				
-				Path { path in
-	//				path.move(to: CGPoint(self.curve.points[0] * scale))
-	//				path.addCurve(to: CGPoint(self.curve.points[3] * scale),
-	//								control1: CGPoint(self.curve.points[1] * scale),
-	//								control2: CGPoint(self.curve.points[2] * scale))
-
+				Path
+				{ path in
 					let y0 = self.curve.value(at: 0.0)
 					path.move(to: CGPoint(x: 0.0, y: y0))
 					
@@ -141,20 +164,19 @@ CurveEditorDetail: View
 						path.addLine(to: CGPoint(x: x * chartWidth, y: y * chartHeight))
 					}
 				}
-				.offset(x: kAxisMargin, y: kAxisMargin)
 				.scale(x: 1.0, y: -1.0)
 				.stroke(style: StrokeStyle(lineWidth: 1.0, lineCap: .square))
 				.foregroundColor(.black)
 				
 				//	Draw the “real” (t -> x,y) curve so we can see how distorted things are…
 				
-				Path { path in
+				Path
+				{ path in
 					path.move(to: CGPoint(self.curve.points[0] * scale))
 					path.addCurve(to: CGPoint(self.curve.points[3] * scale),
 									control1: CGPoint(self.curve.points[1] * scale),
 									control2: CGPoint(self.curve.points[2] * scale))
 				}
-				.offset(x: kAxisMargin, y: kAxisMargin)
 				.scale(x: 1.0, y: -1.0)
 				.stroke(style: StrokeStyle(lineWidth: 1.0, lineCap: .square))
 				.foregroundColor(.green)
@@ -184,16 +206,17 @@ struct InfoBar: View {
 	var body: some View {
 		HStack
 		{
-			Text("Xl: \(self.local.x, specifier: "%0.f")")
+			Text("Xl: \(self.local.x, specifier: "%0.1f")")
 				.frame(minWidth: 100, alignment: .leading)
-			Text("Yl: \(self.local.y, specifier: "%0.f")")
+			Text("Yl: \(self.local.y, specifier: "%0.1f")")
 				.frame(minWidth: 100, alignment: .leading)
-			Text("X: \(self.cursorPosition.x, specifier: "%0.f")")
+			Text("X: \(self.cursorPosition.x, specifier: "%0.1f")")
 				.frame(minWidth: 100, alignment: .leading)
-			Text("Y: \(self.cursorPosition.y, specifier: "%0.f")")
+			Text("Y: \(self.cursorPosition.y, specifier: "%0.1f")")
 				.frame(minWidth: 100, alignment: .leading)
 			Spacer()
 		}
+		.padding(EdgeInsets(top: 1.0, leading: 4.0, bottom: 2.0, trailing: 2.0))
 		.frame(minWidth: 0.0, alignment: .leading)
 		.background(Color("status-bar-background"))
 	}
