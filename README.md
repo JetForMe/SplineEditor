@@ -2,7 +2,7 @@ Attempting to implement, in SwiftUI, a spline curve editor for non-linear scalin
 
 ![](https://i.imgur.com/ujJ9YUR.png)
 
-The black line is the x,y = f(t) curve drawn using SwiftUI `Path`. The green line is y = f(x) drawn as piecewise linear segments (also using `Path`).
+The green line is the _x,y = f(t)_ curve drawn using SwiftUI `Path`. The black line is _y = f(x)_ drawn as piecewise linear segments (also using `Path`).
 
 I’m struggling with a few major concerns, and some influence others:
 
