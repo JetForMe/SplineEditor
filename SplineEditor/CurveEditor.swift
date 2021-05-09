@@ -94,8 +94,8 @@ CurveEditorDetail: View
 				
 				//	Draw the control points…
 				
-				if drawCustomHandles
-					{
+				if self.drawCustomHandles
+				{
 					Path
 					{ path in
 						
