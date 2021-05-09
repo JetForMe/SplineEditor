@@ -15,6 +15,7 @@
 		C6BBE1FA2643C324001BB378 /* Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1F92643C324001BB378 /* Curve.swift */; };
 		C6BBE1FC2643C497001BB378 /* CurveEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1FB2643C497001BB378 /* CurveEditor.swift */; };
 		C6BBE1FE2643CC84001BB378 /* SwiftUI+LZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE1FD2643CC84001BB378 /* SwiftUI+LZ.swift */; };
+		C6BBE2332644EF5C001BB378 /* TrackingArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBE2322644EF5C001BB378 /* TrackingArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		C6BBE1F92643C324001BB378 /* Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curve.swift; sourceTree = "<group>"; };
 		C6BBE1FB2643C497001BB378 /* CurveEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurveEditor.swift; sourceTree = "<group>"; };
 		C6BBE1FD2643CC84001BB378 /* SwiftUI+LZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+LZ.swift"; sourceTree = "<group>"; };
+		C6BBE2322644EF5C001BB378 /* TrackingArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				C6BBE1F92643C324001BB378 /* Curve.swift */,
 				C6BBE1FB2643C497001BB378 /* CurveEditor.swift */,
 				C6BBE1FD2643CC84001BB378 /* SwiftUI+LZ.swift */,
+				C6BBE2322644EF5C001BB378 /* TrackingArea.swift */,
 				C6BBE1D1263FABE2001BB378 /* Assets.xcassets */,
 				C6BBE1D6263FABE2001BB378 /* Info.plist */,
 				C6BBE1D7263FABE2001BB378 /* SplineEditor.entitlements */,
@@ -269,6 +272,7 @@
 			files = (
 				C6BBE1FC2643C497001BB378 /* CurveEditor.swift in Sources */,
 				C6BBE1FA2643C324001BB378 /* Curve.swift in Sources */,
+				C6BBE2332644EF5C001BB378 /* TrackingArea.swift in Sources */,
 				C6BBE1CE263FABE1001BB378 /* SplineEditorApp.swift in Sources */,
 				C6BBE1FE2643CC84001BB378 /* SwiftUI+LZ.swift in Sources */,
 			);

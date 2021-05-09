@@ -39,3 +39,21 @@ CGPoint
 		self.init(x: CGFloat(inPt.x), y: CGFloat(inPt.y))
 	}
 }
+
+extension
+CGSize
+{
+	@inline(__always)
+	public
+	init(_ inPt: simd_float2)
+	{
+		self.init(width: CGFloat(inPt.x), height: CGFloat(inPt.y))
+	}
+	
+	@inline(__always)
+	public
+	init(_ inPt: simd_double2)
+	{
+		self.init(width: CGFloat(inPt.x), height: CGFloat(inPt.y))
+	}
+}
